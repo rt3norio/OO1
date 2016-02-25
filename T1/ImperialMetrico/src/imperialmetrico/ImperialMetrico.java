@@ -6,31 +6,60 @@
 package imperialmetrico;
 import java.util.Scanner;
 
-class Medida {
-    Double pe;
-  	Double jarda;
-  	Double milha;
-  	Double polegada;
-  
-  void Converte(double cm) {
-  	this.pe = cm * 2 * 2.53995;
-    this.jarda = cm * 3 * 12 * 2.53995;
-    this.milha = cm * 1760 * 3 * 12 * 2.53995;
-    this.polegada = cm * 2.53995;
-  };
-};
+/**
+ *
+ * @author suelly
+ */
+public class ImperialMetrico {
 
-public class Imperial {
-  public static void main(String[] args)  {
-    Medida cm = new Medida();
-    Double valor;
-    System.out.println("Informe a medida em cm: ");
-    Scanner sc = new Scanner(System.in);
-    valor = Double.parseDouble( sc.next() );
-    cm.Converte(valor);
-    System.out.println("Valor de "+sc+"cm em jarda(s): "+cm.jarda);
-    System.out.println("Valor de "+sc+"cm em pe(s): "+cm.pe);
-    System.out.println("Valor de "+sc+"cm em milha(s): "+cm.milha);
-    System.out.println("Valor de "+sc+"cm em polegada(s): "+cm.polegada);
-  }
+    
+    static double polegadaPe(double polegada){
+        return polegada/12;
+    }
+    
+    static double peJarda(double pes){
+        return pes/3;
+    }
+s
+    static double jardaMilha(double jarda){
+        return jarda/1760;
+    }
+    
+    static double centimetroPolegada(double cent){
+        //2.53995 = 1 pol
+        return cent/2.53995;
+                
+    }
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        System.out.println("Insira o numero à converter");
+        Scanner sc = new Scanner(System.in);
+        double centimetros = Double.parseDouble(sc.next());
+        double polegada = centimetroPolegada(centimetros);
+        double pes = polegadaPe(polegada);
+        double jardas = peJarda(pes);
+        double milhas = jardaMilha(jardas);
+        System.out.print("seu numero em Centimetros é: ");
+        System.out.println(centimetros);
+        System.out.print("seu numero em Polegadas é: ");
+        System.out.println(polegada);
+        System.out.println("seu numero em Pés é: ");
+        System.out.println(pes);
+        System.out.println("seu numero em Jardas é: ");
+        System.out.println(jardas);
+        System.out.println("seu numero em Milhas é: ");
+        System.out.println(milhas);
+        
+            
+        
+        
+        
+        
+    }
+    
+    
+    
 }
