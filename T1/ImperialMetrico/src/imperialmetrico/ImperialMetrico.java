@@ -13,9 +13,9 @@ class Medida {
   	Double polegada;
   
   void Converte(double cm) {
-  	this.pe = cm * 2 * 2.53995;
-    this.jarda = cm * 3 * 12 * 2.53995;
-    this.milha = cm * 1760 * 3 * 12 * 2.53995;
+  	this.pe = cm * 5.0799; // 2 * 2.53995
+    this.jarda = cm * 91.4382; //3 * 12 * 2.53995
+    this.milha = cm * 160931.232; // 1760 * 3 * 12 * 2.53995
     this.polegada = cm * 2.53995;
   };
 };
