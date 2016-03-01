@@ -28,9 +28,9 @@ public class Imperial {
     Scanner sc = new Scanner(System.in);
     valor = Double.parseDouble( sc.next() );
     cm.Converte(valor);
-    System.out.println("Valor de "+sc+"cm em jarda(s): "+cm.jarda);
-    System.out.println("Valor de "+sc+"cm em pe(s): "+cm.pe);
-    System.out.println("Valor de "+sc+"cm em milha(s): "+cm.milha);
-    System.out.println("Valor de "+sc+"cm em polegada(s): "+cm.polegada);
+    System.out.println("Valor de "+valor+"cm em jarda(s): "+cm.jarda);
+    System.out.println("Valor de "+valor+"cm em pe(s): "+cm.pe);
+    System.out.println("Valor de "+valor+"cm em milha(s): "+cm.milha);
+    System.out.println("Valor de "+valor+"cm em polegada(s): "+cm.polegada);
   }
 }
