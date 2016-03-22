@@ -47,7 +47,7 @@ class Cavalo{
 	Double distanciaAtual;
 
 
-	public Cavalo(String nome) {
+	public Cavalo(String nome) { //fazer obedecer os nomes possiveis!!!!! ! ! ! !! ! ! ! ! !
 		super();
 		for (String nomeCandidato:nomesPossiveis){
 			if (nome.equals(nomeCandidato)){
