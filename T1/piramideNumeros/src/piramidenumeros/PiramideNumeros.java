@@ -31,7 +31,9 @@ public class PiramideNumeros {
                 System.out.println("Numero Inválido! Insira novamente, um numero (1-9)");
             }
         }while(true);
+        
         espacos = input-1;
+        
         for (Integer i=0;i<input;i++){
             int espacosVolta = espacos;
             while (espacosVolta>0){
