@@ -18,11 +18,13 @@ Faça um programa principal que ofereça um menu de opções ao usuário:
       * Colocar produto na cesta (usuário deve indicar o tipo e a quantidade);
       * Mostrar o conteúdo da cesta e, ao final, o valor total da cesta;
       * Limpar a cesta.
+      
 >onsidere o modelo mostrado abaixo:
+
 ![Diagrama de Classes] (http://yuri.website/hortifruti.png "Diagrama de Classes")
 
 Links:
-[Como edita este arquivo README.md]( http://pichiliani.com.br/2015/09/como-fazer-um-bom-readme-para-o-seu-github/ "Como fazer um bom README para o seu git")
 
+[Como edita este arquivo README.md]( http://pichiliani.com.br/2015/09/como-fazer-um-bom-readme-para-o-seu-github/ "Como fazer um bom README para o seu git")
 
 [Apostila do Swing - Caelum]( http://www.caelum.com.br/apostila-java-testes-xml-design-patterns/interfaces-graficas-com-swing/#5-1-interfaces-graficas-em-java "Apostila Swing Caelum")
