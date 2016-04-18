@@ -15,7 +15,7 @@ class Menu {
 		System.out.println("1 para adicionar produto na cesta");
 		System.out.println("2 para mostrar o conteudo da cesta e o valor");
 		System.out.println("3 para limpar a cesta");
-		System.out.println("4 para encerrar");
+		System.out.println("0 para encerrar");
 	}
 	public void exibeMenuOpcao1_1(){
 		System.out.printf("\n\n\n\n\n");
