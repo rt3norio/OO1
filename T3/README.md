@@ -28,4 +28,6 @@ Faça um programa principal que ofereça um menu de opções ao usuário:
 
 > [Como edita este arquivo README.md]( http://pichiliani.com.br/2015/09/como-fazer-um-bom-readme-para-o-seu-github/ "Como fazer um bom README para o seu git")
 
+> [Editor de texto MarkDown (.md)] (http://daringfireball.net/projects/markdown/dingus "Editor MarkDown")
+
 > [Apostila do Swing - Caelum]( http://www.caelum.com.br/apostila-java-testes-xml-design-patterns/ "Apostila Swing Caelum")
