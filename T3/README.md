@@ -20,7 +20,7 @@ Faça um programa principal que ofereça um menu de opções ao usuário:
 * Mostrar o conteúdo da cesta e, ao final, o valor total da cesta.
 * Limpar a cesta.
  
-`int aff = 10;`
+` &#8212; int aff = 10;`
       
 > Considere o modelo mostrado abaixo:
 
