@@ -15,9 +15,9 @@ O método calcularTotal faz o somatório dos produtos preço vezes quantidade de
 O método listarCesta mostra cada um dos produtos da cesta, indicando o tipo de produto (banana, maça, etc.), o preço unitário e a quantidade; no final mostre o valor total da cesta.
 Perceba que a classe Produto é abstrata (está em itálico), bem como o método getPreco.
 Faça um programa principal que ofereça um menu de opções ao usuário:
-      * Colocar produto na cesta (usuário deve indicar o tipo e a quantidade);
-      * Mostrar o conteúdo da cesta e, ao final, o valor total da cesta;
-      * Limpar a cesta.
+      *Colocar produto na cesta (usuário deve indicar o tipo e a quantidade);
+      *Mostrar o conteúdo da cesta e, ao final, o valor total da cesta;
+      *Limpar a cesta.
       
 > Considere o modelo mostrado abaixo:
 
