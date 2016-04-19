@@ -19,6 +19,8 @@ Faça um programa principal que ofereça um menu de opções ao usuário:
 * Colocar produto na cesta (usuário deve indicar o tipo e a quantidade).
 * Mostrar o conteúdo da cesta e, ao final, o valor total da cesta.
 * Limpar a cesta.
+ 
+`int aff = 10;`
       
 > Considere o modelo mostrado abaixo:
 
