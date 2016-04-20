@@ -1,5 +1,6 @@
 package br.com.hortifruti;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Hortifruti {
@@ -11,6 +12,7 @@ public class Hortifruti {
 			Menu menu = new Menu();
 			menu.exibeMenuPrincipal();
 			Boolean check_add_produto = false;
+			
 			switch(scan.nextInt()){
 				case 1:
 					int qt;
@@ -65,6 +67,10 @@ public class Hortifruti {
 				default:
 					continue;
 			}
+			
+			
+				
+			
 		}
 
 	}

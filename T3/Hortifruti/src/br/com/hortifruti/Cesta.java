@@ -33,7 +33,8 @@ class Cesta {
 			}
 			System.out.print(prod.getNome()+": ");
 			System.out.print(prod.getQuantidade()+"un. * R$");
-			System.out.println(prod.getPreco()+" = R$"+prod.getPreco()*prod.getQuantidade());
+			System.out.printf("%.2f", prod.getPreco());
+			System.out.println(" = R$"+prod.getPreco()*prod.getQuantidade());
 			total += prod.getPreco()*prod.getQuantidade();
 		}
 		System.out.printf("\n");
