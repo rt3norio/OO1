@@ -23,20 +23,21 @@ class Cesta {
 	
 	public void ListarCesta(){
 		Double total = 0.0;
+		System.out.printf("\n\n\n\n\n");
+		System.out.printf("###Cesta de Compras###\n");
 		for (int i = 0; i < vProdutos.length; i++) {
 			Produtos prod = vProdutos[i];
 			if (prod == null) {
 				System.out.println("Total: R$"+total);
 				return;
 			}
-			System.out.printf("\n\n\n\n\n");
-			System.out.printf("###Cesta de Compras###\n");
 			System.out.print(prod.getNome()+": ");
 			System.out.print(prod.getQuantidade()+"un. * R$");
 			System.out.println(prod.getPreco()+" = R$"+prod.getPreco()*prod.getQuantidade());
 			total += prod.getPreco()*prod.getQuantidade();
 		}
-		System.out.println("\n        Total: R$"+total);
+		System.out.printf("\n");
+		System.out.println("Total: R$"+total);
 		
 	}
 }

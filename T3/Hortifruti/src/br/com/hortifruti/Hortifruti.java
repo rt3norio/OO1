@@ -10,6 +10,7 @@ public class Hortifruti {
 		while (true){
 			Menu menu = new Menu();
 			menu.exibeMenuPrincipal();
+			Boolean check_add_produto = false;
 			switch(scan.nextInt()){
 				case 1:
 					int qt;
@@ -18,26 +19,36 @@ public class Hortifruti {
 					menu.exibeMenuOpcao1_2();
 					switch(scan.nextInt()){
 						case 1:
-							cesta.adicionarProduto(new Banana(qt));
+							check_add_produto = cesta.adicionarProduto(new Banana(qt));
 							break;
 						case 2:
-							cesta.adicionarProduto(new Limao(qt));
+							check_add_produto = cesta.adicionarProduto(new Limao(qt));
 							break;
 						case 3:
-							cesta.adicionarProduto(new Maca(qt));
+							check_add_produto = cesta.adicionarProduto(new Maca(qt));
 							break;
 						case 4:
-							cesta.adicionarProduto(new Mamao(qt));
+							check_add_produto = cesta.adicionarProduto(new Mamao(qt));
 							break;
 						case 5:
-							cesta.adicionarProduto(new Morango(qt));
+							check_add_produto = cesta.adicionarProduto(new Morango(qt));
 							break;
 						case 6: 
-							cesta.adicionarProduto(new Pera(qt));
+							check_add_produto = cesta.adicionarProduto(new Pera(qt));
 							break;
 						case 7:
-							cesta.adicionarProduto(new Uva(qt));
+							check_add_produto = cesta.adicionarProduto(new Uva(qt));
 							break;
+					}
+					if(check_add_produto){
+						System.out.println("\n\nProduto Adicionado com Sucesso!");
+						scan.nextLine();
+						scan.nextLine();
+					}
+					else{
+						System.out.println("\n\nFALHA AO ADICIONAR PRODUTO!");
+						scan.nextLine();
+						scan.nextLine();
 					}
 					break;
 				case 2:
@@ -49,6 +60,7 @@ public class Hortifruti {
 					cesta = new Cesta();
 					break;
 				case 0:
+					scan.close();
 					return;
 				default:
 					continue;
