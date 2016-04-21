@@ -5,12 +5,20 @@ public class Funcionario {
 	private String nome;
 	private Double salario;
 	
-	public Funcionario(String nome,Double salario){
-		
-		
-		
+	public Funcionario (String nome,Double salario){
+		if (nome.length()>40){
+			throw new IllegalArgumentException();
+		}
+		else{
+			this.nome = nome;
+		}
+		if (salario < 350.0){
+			throw new ViolacaoCltException();
+		}
+		else{
+			this.salario = salario;
+		}
 	}
-	
 	
 	public String getNome() {
 		return nome;
@@ -22,7 +30,12 @@ public class Funcionario {
 		return salario;
 	}
 	public void setSalario(Double salario) {
-		this.salario = salario;
+		if (salario > this.salario*1.1){
+			throw new AumentoAbsurdoException();
+		}
+		else{
+			this.salario = salario;	
+		}
 	}
 	public Integer getMatricula() {
 		return matricula;
