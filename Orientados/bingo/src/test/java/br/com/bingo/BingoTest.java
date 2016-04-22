@@ -48,7 +48,7 @@ public class BingoTest {
 	@Test
 	public void testSortear() {
 		Bingo bingo = new Bingo();
-		bingo.adicionarParticipante(0, "Ana");
+		bingo.adicionarParticipante(0, "Ana");	
 		int posicaoSorteado = bingo.sortear();
 		assertEquals(0, posicaoSorteado);
 
